@@ -1,3 +1,6 @@
+// https://github.com/LambdaSchool/Whiteboard-Pairing/tree/master/RockPaperScissors
+// this is equivalent to the three step problem
+
 function rockPaperScissors(n) {
     const results = [];
     const options = ['rock', 'paper', 'scissors'];
