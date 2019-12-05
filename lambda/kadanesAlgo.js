@@ -15,3 +15,15 @@ function kadanesAlgo(array) {
     return Math.max(...results)
 }
 console.log(kadanesAlgo(intArray))
+
+
+function kadanesAlgo(array) {
+    let maxEndingHere = array[0]
+    let maxSoFar = array[0]
+    for (let i = 1; i < array.length; i++) {
+        let currentNum = array[i]
+        maxEndingHere = Math.max(currentNum, maxEndingHere + currentNum)
+        maxSoFar = Math.max(maxSoFar, maxEndingHere)
+    }
+    return maxSoFar
+}
