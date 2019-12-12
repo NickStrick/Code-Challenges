@@ -25,3 +25,30 @@ function minimumSwaps(arr) {
 
 //   }
 // }
+
+
+
+//c# version
+
+
+    // Complete the minimumSwaps function below.
+    // static int minimumSwaps(int[] arr) 
+    // {
+    //     int swaps = 0;
+    //     for(int i = 0; i < arr.Length; i++) {
+    //         while(arr[i] != i + 1) {
+    //             SwapInts(arr, i, arr[i] - 1);
+    //             swaps++;
+    //         }
+    //     }
+    //     return swaps;
+    // }
+    // static void SwapInts(int[] array, int position1, int position2)
+    // {
+    //     //
+    //     // Swaps elements in an array.
+    //     //
+    //     int temp = array[position1]; // Copy the first position's element
+    //     array[position1] = array[position2]; // Assign to the second element
+    //     array[position2] = temp; // Assign to the first element
+    // }
