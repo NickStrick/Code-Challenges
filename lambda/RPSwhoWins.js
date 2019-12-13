@@ -49,3 +49,55 @@ function rockPaperScissors(h) {
     }
 }
 rockPaperScissors('R');
+
+// function rockPaperScissors(h){
+//     let ai = Math.floor(Math.random() * 2)
+//     switch(ai){
+//       case 0: 
+//         console.log('AI - rock')
+//         break;
+//       case 1: 
+//         console.log('AI - paper')
+//         break;
+//       case 2: 
+//         console.log('AI - scissors')
+//         break;
+//     };
+//     switch(h){
+//       case 0: 
+//         console.log('Player - rock')
+//         break;
+//       case 1: 
+//         console.log('Player - paper')
+//         break;
+//       case 2: 
+//         console.log('Player - scissors')
+//         break;
+//     };
+//     if (ai === h){
+//       return 'Tie'
+//     }else if(ai == 0 && h == 2 || ai == 1 && h == 0 || ai == 2 && h == 1){
+//       return 'Ai wins'
+//     }else if(ai == 0 && h == 1 || ai == 1 && h == 2 || ai == 2 && h == 0){
+//       return 'Player wins'
+//     }
+//   }
+//   rockPaperScissors(2)
+
+// function rockPaperScissors(h){
+//     let option = ["rock", "paper", "scissor"]
+//     let bot = option[Math.floor(Math.random() * option.length)]
+//     if(h === "rock" && bot === "paper"){
+//         console.log("bot wins")
+//     } else if(h === "scissor" && bot ===  "rock") {
+//         console.log("bot wins")
+//     } else if(h === "paper" && bot === "scissor"){
+//         console.log("bot wins")
+//     } else if(h === bot) {
+//         console.log("its a tie")
+//     }
+//     else {
+//         console.log("you wins")
+//     }
+//   }
+//   rockPaperScissors("rock")
