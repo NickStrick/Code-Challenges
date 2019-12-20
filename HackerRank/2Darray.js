@@ -16,3 +16,29 @@ There are  hourglasses in , and an hourglass sum is the sum of an hourglass' val
 
 For example, given the 2D array:
 */
+
+// Complete the hourglassSum function below.
+function hourglassSum(arr) {
+    console.log(arr, arr.length - 2)
+    // let totals = []
+    let max = 0
+
+    for (let i = 1; i <= arr.length - 2; i++) {
+        for (let j = 1; j <= arr.length - 2; j++) {
+            let sum = arr[i][j] +
+                arr[i - 1][j - 1] +
+                arr[i - 1][j] +
+                arr[i - 1][j + 1] +
+                arr[i + 1][j - 1] +
+                arr[i + 1][j] +
+                arr[i + 1][j + 1];
+            // totals.push(sum)
+            if (sum > max) {
+                max = sum
+            }
+
+        }
+    }
+    return max
+
+}
