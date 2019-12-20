@@ -21,7 +21,7 @@ For example, given the 2D array:
 function hourglassSum(arr) {
     console.log(arr, arr.length - 2)
     // let totals = []
-    let max = 0
+    let max = Number.NEGATIVE_INFINITY
 
     for (let i = 1; i <= arr.length - 2; i++) {
         for (let j = 1; j <= arr.length - 2; j++) {
