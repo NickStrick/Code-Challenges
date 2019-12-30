@@ -20,3 +20,35 @@ process.stdin.on('end', _ => {
 
     main();
 });
+
+function matchingStrings(strings, queries) {
+
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const stringsCount = parseInt(readLine(), 10);
+
+    let strings = [];
+
+    for (let i = 0; i < stringsCount; i++) {
+        const stringsItem = readLine();
+        strings.push(stringsItem);
+    }
+
+    const queriesCount = parseInt(readLine(), 10);
+
+    let queries = [];
+
+    for (let i = 0; i < queriesCount; i++) {
+        const queriesItem = readLine();
+        queries.push(queriesItem);
+    }
+
+    let res = matchingStrings(strings, queries);
+
+    ws.write(res.join("\n") + "\n");
+
+    ws.end();
+}
