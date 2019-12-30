@@ -20,7 +20,10 @@ process.stdin.on('end', _ => {
 });
 
 function readLine(nums, d) {
-
+    let left = nums.splice(0, d)
+    nums = [...nums, ...left]
+    console.log(nums.join(' '));
+    return nums.join(' ')
 }
 
 
