@@ -22,7 +22,16 @@ process.stdin.on('end', _ => {
 });
 
 function matchingStrings(strings, queries) {
-
+    let res = []
+    for (let i = 0; i < queries.length; i++) {
+        let count = 0
+        for (let j = 0; j < strings.length; j++) {
+            if (strings[j] === queries[i]) count++
+        }
+        res.push(count)
+    }
+    console.log(res)
+    return res
 }
 
 function main() {
