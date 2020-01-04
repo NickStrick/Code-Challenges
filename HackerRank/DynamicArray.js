@@ -1,0 +1,1 @@
+//Given N, Q, and Q queries, execute each query.
