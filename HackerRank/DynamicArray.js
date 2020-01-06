@@ -14,7 +14,6 @@ function dynamicArray(n, queries) {
     const secondOperation = (query) => {
         let s = ((query[1] ^ lastAnswer) % n)
         let y = query[2] % seq[s].length
-        // console.log('sequence', seq[s], y)
         lastAnswer = seq[s][y]
 
         res.push(lastAnswer)
@@ -28,7 +27,6 @@ function dynamicArray(n, queries) {
         if (query[0] === 1) {
             firstOperation(query);
         } else if (query[0] === 2) {
-            // console.log(seq, query, lastAnswer, res)
             secondOperation(query);
         }
     })
