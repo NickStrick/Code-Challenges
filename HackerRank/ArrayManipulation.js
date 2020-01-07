@@ -23,3 +23,20 @@ function arrayManipulation(n, queries) {
     return biggest
 
 }
+
+let arr1 = [ // 200
+    [1, 2, 100],
+    [2, 5, 100],
+    [3, 4, 100]
+]
+let arr2 = [ // 10
+    [1, 5, 3],
+    [4, 8, 7],
+    [6, 9, 1]
+]
+let arr3 = [ // 31
+    [2, 6, 8],
+    [3, 5, 7],
+    [1, 8, 1],
+    [5, 9, 15]
+]
