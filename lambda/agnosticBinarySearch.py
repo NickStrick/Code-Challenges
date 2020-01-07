@@ -49,6 +49,9 @@ def ascending_binary_search(arr, target):
     while low < high:
         midpoint = low + (high-low) // 2
         if target == arr[midpoint]:
+            while arr[midpoint-1] == arr[midpoint]:
+                print('dup', midpoint)
+                midpoint = midpoint-1
             return midpoint
         if target < arr[midpoint]:
             # if the target exists, it must exist in the left side
@@ -74,6 +77,9 @@ def descending_binary_search(arr, target):
     while low < high:
         midpoint = low + (high-low) // 2
         if target == arr[midpoint]:
+            while arr[midpoint-1] == arr[midpoint]:
+                print('dup', midpoint)
+                midpoint = midpoint-1
             return midpoint
         if target < arr[midpoint]:
             # if the target exists, it must exist in the left side
