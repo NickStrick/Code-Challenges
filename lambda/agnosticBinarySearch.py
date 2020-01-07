@@ -93,3 +93,8 @@ arr2 = [1, 1, 4, 4, 4, 6, 10]
 print(ascending_binary_search(arr1, 5))
 print(ascending_binary_search(arr2, 6))
 print(ascending_binary_search(arr2, 4))
+
+arr3 = [10, 6, 4]
+arr4 = [6, 5, 4, 3, 2, 1]
+print(descending_binary_search(arr3, 10))
+print(descending_binary_search(arr4, 2))
