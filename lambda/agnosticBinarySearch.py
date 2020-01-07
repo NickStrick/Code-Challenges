@@ -61,3 +61,28 @@ def ascending_binary_search(arr, target):
 
     # if we land outside the loop, the target doesn't exist in the array
     return -1
+
+
+def descending_binary_search(arr, target):
+
+    high = len(arr)-1
+    low = 0
+
+    # how do we know when to stop binary seraching?
+    # 1. when high == low
+    # 2. target == arr[midpoint]
+    while low < high:
+        midpoint = low + (high-low) // 2
+        if target == arr[midpoint]:
+            return midpoint
+        if target < arr[midpoint]:
+            # if the target exists, it must exist in the left side
+            # we can rule out the right side
+            low = midpoint + 1
+        else:
+            # otherwise, target > arr[midpoint]
+            # we can rule out the left side
+            high = midpoint
+
+    # if we land outside the loop, the target doesn't exist in the array
+    return -1
