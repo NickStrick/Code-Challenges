@@ -86,3 +86,10 @@ def descending_binary_search(arr, target):
 
     # if we land outside the loop, the target doesn't exist in the array
     return -1
+
+
+arr1 = [1, 2, 3, 4, 5, 6, 7]
+arr2 = [1, 1, 4, 4, 4, 6, 10]
+print(ascending_binary_search(arr1, 5))
+print(ascending_binary_search(arr2, 6))
+print(ascending_binary_search(arr2, 4))
