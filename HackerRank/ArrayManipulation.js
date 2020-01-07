@@ -40,3 +40,7 @@ let arr3 = [ // 31
     [1, 8, 1],
     [5, 9, 15]
 ]
+
+console.log(arrayManipulation(5, arr1))
+console.log(arrayManipulation(10, arr2))
+console.log(arrayManipulation(10, arr3))
