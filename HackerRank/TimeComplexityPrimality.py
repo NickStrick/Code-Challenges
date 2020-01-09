@@ -3,6 +3,7 @@
 
 def primality(n):
 
+
   # divide number by itself, if it has no remainder, it's prime
   # even numbers can't be prime
   # how many numbers do we need to check to ensure n is prime?
@@ -13,3 +14,16 @@ def primality(n):
 # we don't need to check anything past n^(1/2)
 # it's a number that definitely divides n, but in a lot of cases,
 # the square root won't be an integer
+
+  # 25 => 2 * 12.5, 3 * 8., 4 * 6., 5 * 5, 6 * 3.
+   if n == 2:
+        return "Prime"
+    elif n == 1 or n % 2 == 0:
+        return "Not prime"
+    # O(n^(1/2)/2)
+    for i in range(3, int(math.sqrt(n) + 1), 2):
+        # 3, 5, 7, 9
+        if n % i == 0:
+            return "Not prime"
+    return "Prime"
+​
