@@ -27,3 +27,15 @@ def primality(n):
             return "Not prime"
     return "Prime"
 ​
+# n = 83
+# n^(1/2) = 9.1104
+
+# initial first-pass implementation
+
+
+def primality(n):
+    # O(n)
+    for i in range(math.sqrt(n)):
+        if n % i == 0:
+            return "Not prime"
+    return "Prime"
