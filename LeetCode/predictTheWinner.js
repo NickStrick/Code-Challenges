@@ -11,6 +11,24 @@ var PredictTheWinner = function (nums) {
 
     //[5, 1, 5, 233, 7]
 
+    if (nums.length < 3) return true
+
+    let player1 = []
+    let player2 = []
+    let first = nums[0];
+    let second = nums[1];
+    let secondToLast = nums[nums.length - 2];
+    let last = nums[nums.length - 1];
+
+    while (nums) {
+        first = nums[0];
+        second = nums[1];
+        secondToLast = nums[nums.length - 2];
+        last = nums[nums.length - 1];
+
+
+    }
+
 
 }
 
