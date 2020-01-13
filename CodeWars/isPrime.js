@@ -2,9 +2,8 @@
 
 
 function isPrime(num) {
-    if (num <= 2) {
-        return true
-    }
+    if (num < 2) return false
+    if (num === 2) return true
     let sq = Math.ceil(Math.sqrt(num))
     for (let i = 2; i <= sq; i++) {
         if (num % i === 0) {
