@@ -66,3 +66,6 @@ class LockableNode {
 
     }
 }
+
+let n1 = new LockableNode(4)
+console.log(n1.can_be_locked())
