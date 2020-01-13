@@ -10,3 +10,25 @@
 // You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes.
 
 // Each method should run in O(h), where h is the height of the tree.
+
+class LockableNode {
+    constructor(val, left = null, right = null, parent = null) {
+        this.val = val
+        this.left = left
+        this.right = right
+        this.parent = parent
+        this.is_locked = false;
+        this.locked_descendants = 0
+    }
+
+    can_be_locked() {
+        if (this.locked_descendants > 0) return false
+
+        cur = this.parent
+        while (cur) {
+            if (cur.is_locked) return false
+            cur = cur.parent
+        }
+        return true
+    }
+}
