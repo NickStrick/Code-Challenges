@@ -31,4 +31,38 @@ class LockableNode {
         }
         return true
     }
+
+    lock() {
+        if (self.can_be_locked()) {
+            // Not locked, so update is_locked and increment count in all ancestors
+            this.is_locked = true
+
+            cur = this.parent
+            while (cur) {
+                cur.locked_descendants += 1
+                cur = cur.parent
+            }
+            return true
+
+        } else {
+            return false
+        }
+    }
+
+    unlock() {
+        if (self.can_be_locked()) {
+            this.is_locked = true
+
+            cur = this.parent
+            while (cur) {
+                cur.locked_descendants -= 1
+                cur = cur.parent
+            }
+            return true
+
+        } else {
+            return false
+        }
+
+    }
 }
