@@ -97,3 +97,18 @@ def shifted_binary_search_2(arr, target):
   else:
     # binary search the left side 
     return binary_search(arr, floor, smallest - 1, target)
+
+
+# a good ole vanilla recursive binary search implementation 
+def binary_search(arr, floor, ceiling, target):
+  if ceiling >= floor:
+    mid = floor + (ceiling - floor) // 2
+​
+    if arr[mid] == target:
+      return mid
+    if arr[mid] > target:
+      return binary_search(arr, floor, mid - 1, target)
+    else:
+      return binary_search(arr, mid + 1, ceiling, target)
+​
+  return -1
