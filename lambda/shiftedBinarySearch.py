@@ -112,3 +112,24 @@ def binary_search(arr, floor, ceiling, target):
       return binary_search(arr, mid + 1, ceiling, target)
 ​
   return -1
+
+# finds the rotation point index using 
+# a binary search-like algorithm 
+def find_rotation_point(arr):
+  first = arr[0]
+  floor = 0
+  ceiling = len(arr) - 1
+​
+  while floor < ceiling:
+    mid = floor + (ceiling - floor) // 2
+​
+    if arr[mid] >= first:
+      floor = mid
+    else:
+      ceiling = mid
+    # we've narrowed it down to two elements 
+    # right around the rotation point 
+    if floor + 1 == ceiling:
+      break
+​
+  return ceiling
