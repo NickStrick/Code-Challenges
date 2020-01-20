@@ -39,3 +39,61 @@ def shifted_binary_search(arr, target):
 O(log n) implementation that performs a single
 modified binary search run through the array.
 '''
+
+
+def shifted_binary_search_1(arr, target):
+  floor = 0
+  ceiling = len(arr) - 1
+
+  while floor < ceiling:
+    mid = floor + (ceiling - floor) // 2
+    first = arr[floor]
+    last = arr[ceiling]
+
+
+​
+    if arr[mid] == target:
+      return mid
+    if first == target:
+      return floor
+    if last == target:
+      return ceiling
+​
+    # right side is the sorted side
+    if arr[mid] < last:
+      if target > arr[mid] and target < last:
+        # target is in the sorted side
+        floor = mid + 1
+      else:
+        # target is in the unsorted side
+        ceiling = mid - 1
+​
+    # otherwise, left side is the sorted side
+    else:
+      if target < arr[mid] and target > first:
+        ceiling = mid - 1
+      else:
+        floor = mid + 1
+
+  # didn't find the target
+  return -1
+​
+'''
+O(2 * log n) implementation that follows the two-phase approach 
+First finds the index of the rotation point, then 
+performs a regular binary search on the sorted half that
+must contain the target element. 
+'''
+def shifted_binary_search_2(arr, target):
+  floor = 0
+  ceiling = len(arr) - 1
+  smallest = find_rotation_point(arr)
+  
+  # determine which half to run a single binary search
+  # on to find the target 
+  if target >= arr[smallest] and target <= arr[ceiling]:
+    # binary search the right side 
+    return binary_search(arr, smallest, ceiling, target)
+  else:
+    # binary search the left side 
+    return binary_search(arr, floor, smallest - 1, target)
