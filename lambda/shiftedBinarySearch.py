@@ -1,4 +1,9 @@
+# video: https://youtu.be/zrdS8ea2-9k
+# problem: https://gist.github.com/seanchen1991/9af397de06bfcc9772a54b02aa0c05e0
+
+
 def shifted_binary_search(arr, target):
+
 
   # how might we figure out the rotation index?
   # split up the problem, depending on the number at the rotation index
@@ -29,3 +34,8 @@ def shifted_binary_search(arr, target):
 # otherwise, the value must be in the unsorted portion
 ​
 # [49, 2]
+
+'''
+O(log n) implementation that performs a single
+modified binary search run through the array.
+'''
