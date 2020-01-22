@@ -91,3 +91,20 @@ def check_neighbors(x, y, map):
         valid_neighbors.append([x, y+1])
 ​
    return valid_neighbors
+
+m = [
+  [1, 0, 0, 1, 0],  
+  [1, 0, 1, 0, 0],  
+  [0, 0, 1, 0, 1],  
+  [1, 0, 1, 0, 1],  
+  [1, 0, 1, 1, 0],  
+]
+​
+print(river_sizes(m))
+​
+n = [
+  [1, 1],
+  [1, 0]
+]
+​
+print(river_sizes(n))
