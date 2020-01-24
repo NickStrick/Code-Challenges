@@ -101,7 +101,13 @@ def task_scheduler(tasks, deps):
     return ordering
 
 
+# test case number 1
 jobs = [9, 4, 10, 13, 3, 5]
 deps = [[10, 3], [10, 4], [3, 9], [5, 10], [4, 3]]
+
+print(task_scheduler(jobs, deps))
+
+jobs = [9, 4, 10, 13, 3, 5, 15, 20]
+deps = [[10, 3], [10, 4], [3, 9], [5, 10], [4, 3], [20, 15]]
 
 print(task_scheduler(jobs, deps))
