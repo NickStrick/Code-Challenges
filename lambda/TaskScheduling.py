@@ -99,3 +99,9 @@ def task_scheduler(tasks, deps):
         return []
 
     return ordering
+
+
+jobs = [9, 4, 10, 13, 3, 5]
+deps = [[10, 3], [10, 4], [3, 9], [5, 10], [4, 3]]
+
+print(task_scheduler(jobs, deps))
