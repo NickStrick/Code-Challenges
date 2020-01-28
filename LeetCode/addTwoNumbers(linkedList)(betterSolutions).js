@@ -46,3 +46,28 @@ var addTwoNumbers = function (l1, l2) {
 
     return node;
 };
+
+// class Solution:
+//     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+//         re = None
+//         cur = None
+//         r = 0
+//         while True:
+//             v = (0 if l1 == None else l1.val)  + (0 if l2 == None else l2.val) + r
+//             r = v // 10
+//             v = v % 10
+//             ln = ListNode(v)
+//             if re == None:
+//                 re = ln
+//             else:
+//                 cur.next = ln
+//             cur = ln
+//             if l1 != None:
+//                 l1 = l1.next
+//             if l2 != None:
+//                 l2 = l2.next
+//             if l1 == None  and l2 == None:
+//                 if r != 0:
+//                     cur.next = ListNode(r)
+//                 break
+//         return re
