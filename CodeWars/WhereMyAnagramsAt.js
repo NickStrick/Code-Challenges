@@ -13,7 +13,7 @@ function anagrams(word, words) {
     for (let i = 0; i < words.length; i++) {
         const currWord = words[i].split("");
         const word2 = {}
-        for (let j = 0; j < currWord.length; j++ {
+        for (let j = 0; j < currWord.length; j++) {
             let item = currWord[j];
             if (item in Object.keys(word1)) {
 
@@ -23,8 +23,10 @@ function anagrams(word, words) {
                 word2[item] = 0
             }
             word2[item] += 1
-        })
+        }
     }
     console.log(word1, word2)
     return [word1, word2]
 }
+
+console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']), ['aabb', 'bbaa']);
