@@ -45,4 +45,19 @@ function anagrams(word, words) {
     })
 }
 
+// def anagrams(word, words):
+//     word_length = len(word)
+
+//     # If word is empty, return empty array
+//     if word_length == 0: return []
+
+//     # Create list of equal length strings from words
+//     eq_len_words = [word for word in words if len(word) == word_length]
+
+//     # Create lowercase & sorted word
+//     sorted_word = sorted(word.lower())
+
+//     # lower() sorted words, return final list of anagrams
+//     return [word for word in eq_len_words if sorted(word.lower()) == sorted_word]
+
 console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']), ['aabb', 'bbaa']);
