@@ -24,3 +24,6 @@ let sorted = function (A) {
     }
     return result;
 };
+
+let A = [-4, -1, 0, 3, 10]
+sorted(A);
