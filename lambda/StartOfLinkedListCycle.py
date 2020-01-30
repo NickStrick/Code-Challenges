@@ -17,3 +17,5 @@ def start_of_linked_list_cycle(head):
 # what information are we missing, or what do we need to figure out in order to adapt
 # the fast and slow pointer idea?
 # distance between the start of the list and the current node position
+
+#not finished
