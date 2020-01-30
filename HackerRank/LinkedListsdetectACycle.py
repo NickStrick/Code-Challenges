@@ -58,3 +58,27 @@ def has_cycle(head):
 
     # if we reach the end of the loop, that means that we reached the end of the list
     return False
+
+# class Node {
+#   constructor(val, next_node=null) {
+#     this.val = val;
+#     this.next = next_node;
+#   }
+# }
+# ​
+# function hasCycle(head) {
+#   let fast = head;
+#   let slow = head;
+# ​
+#   while (fast && fast.next) {
+#     fast = fast.next.next;
+#     slow = slow.next;
+# ​
+#     if (fast === slow) {
+#       return true;
+#     }
+#   }
+# ​
+#   return false;
+# }
+# ​
