@@ -2,6 +2,12 @@
 # video: https://youtu.be/4urj8Mj7G78
 
 
+class Node:
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+
+
 def start_of_linked_list_cycle(head):
 
         # 1. figure out if there is a cycle
@@ -18,4 +24,56 @@ def start_of_linked_list_cycle(head):
 # the fast and slow pointer idea?
 # distance between the start of the list and the current node position
 
-#not finished
+  cycle_length = 0
+   # find the LinkedList cycle
+      slow, fast = head, head
+
+       while fast is not None and fast.next is not None:
+            fast = fast.next.next
+            slow = slow.next
+
+            if slow is fast:
+                  # calculate the length
+                cycle_length = calculate_cycle_length(slow)
+                break
+
+        return find_start(head, cycle_length)
+​
+
+
+def calculate_cycle_length(node):
+    current = node
+    cycle_length = 0
+
+    while True:
+        current = current.next
+        cycle_length += 1
+
+        if current == node:
+            break
+
+    return cycle_length
+
+
+​
+
+
+def find_start(head, cycle_length):
+    # if there was no cycle, then cycle_length is 0
+    if cycle_length == 0:
+        return head
+
+    behind = head
+    ahead = head
+
+    # move ahead pointer forward 'cycle_length' nodes
+    while cycle_length > 0:
+        ahead = ahead.next
+        cycle_length -= 1
+
+    # increment both pointers until they meet at the start of the cycle
+    while behind is not ahead:
+        behind = behind.next
+        ahead = ahead.next
+
+    return behind
