@@ -15,3 +15,8 @@ function sumIntervals(intervals) {
     //COUNT
     return arr.length;
 }
+
+var test1 = [[1, 5]];
+var test2 = [[1, 5], [6, 10]];
+console.log(sumIntervals(test1), 4);
+console.log(sumIntervals(test2), 8);
