@@ -28,3 +28,8 @@ class Solution:
 #                 i+=1
 #             i+=1
 #         del arr[preSize:]
+
+
+let arr1 = [1, 0, 2, 3, 0, 4, 5, 0]
+
+print(Solution.duplicateZeros(arr1))
