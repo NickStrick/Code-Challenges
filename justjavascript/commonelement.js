@@ -9,3 +9,8 @@ function commonElements(arr1, arr2) {
     }
     return newArr
 }
+
+function sumOfDigits(num) {
+    num = num.toString().split('')
+    return num.reduce((acc, el) => acc + Number(el), 0);
+}
