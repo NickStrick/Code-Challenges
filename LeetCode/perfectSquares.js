@@ -44,3 +44,7 @@ var numSquares = n => {
     // otherwise
     return 3
 }
+
+console.log(numSquares(12))
+console.log(numSquares(13))
+console.log(numSquares(155))
