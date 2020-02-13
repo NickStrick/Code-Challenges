@@ -41,3 +41,9 @@ def smallest_missing(arr):
 # Can we utilize binary search for this?
 # the array needs to already be sorted
 # find the midpoint of our array
+
+
+print(smallest_missing([0, 1, 2, 6, 9, 11, 15]))
+print(smallest_missing([1, 2, 3, 4, 6, 9, 11, 15]))
+print(smallest_missing([0, 1, 2, 3, 4, 5, 6]))
+print(smallest_missing([]))  # should return 0
