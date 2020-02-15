@@ -1,7 +1,6 @@
 # video: https://youtu.be/nnRZ5Gnhhhk
 def river_sizes(map):
 
-
   # iterate through each row and check to see if its a 0 or 1 and see if it's related
   # to a position in the next row
     # we see a 0
@@ -10,7 +9,6 @@ def river_sizes(map):
       # have another array that keeps track of the position of where the 1 is in the
       # input matrix
       # this tells us we're looking at a part of a river
-​
   # how do we record our progress?
   # what data structure do I need to use here?
   # hash tables?
@@ -19,8 +17,7 @@ def river_sizes(map):
     # we don't count it again
     # 2. keep another matrix of the same size that has true and false booleans keeping
     # track of if we've visited this position already
-   result = []
-    # loop through each row
+    result = []  # loop through each row
     for i in range(len(map)):
         # loop through each column
         for j in range(len(map[0])):
@@ -35,7 +32,6 @@ def river_sizes(map):
                 result.append(length)
     # return our result array
     return result
-​
 # does the work of counting the length of a river
 # input: position of a 1 in our matrix and the matrix itself
 # checks in all valid horizontal and vertical directions to see if
@@ -52,16 +48,14 @@ def traverse_river(i, j, map):
     # adjacent to this position
     valid_neighbors = [[i, j]]
 
-
-​
     while len(valid_neighbors) > 0:
         current_node = valid_neighbors.pop()
         # check if the popped off node has been visited before
         x = current_node[0]
         y = current_node[1]
-​
-   if map[x][y] == 0:
-        continue
+
+        if map[x][y] == 0:
+            continue
     # check our current node to see if there are any valid neighbors in the 4 cardinal
     # directions
     unvisited_valid_nodes = check_neighbors(x, y, map)
@@ -71,40 +65,39 @@ def traverse_river(i, j, map):
     # toggle our current position to 0 so that it doesn't get visited again
     map[x][y] = 0
     river_size += 1
-​
+
     return river_size
-​
+
 # checks right and down directions
 # any direction that has a 1 is added to an array
 
 
 def check_neighbors(x, y, map):
     valid_neighbors = []
-
-​
     # we actually only need to check to the right and down
     # check the spot to the right our position
-   if x < len(map) - 1 and map[x+1][y] == 1:
+    if x < len(map) - 1 and map[x+1][y] == 1:
         valid_neighbors.append([x+1, y])
     # check down
     if y < len(map[0]) - 1 and map[x][y+1] == 1:
         valid_neighbors.append([x, y+1])
-​
-   return valid_neighbors
+
+    return valid_neighbors
+
 
 m = [
-  [1, 0, 0, 1, 0],  
-  [1, 0, 1, 0, 0],  
-  [0, 0, 1, 0, 1],  
-  [1, 0, 1, 0, 1],  
-  [1, 0, 1, 1, 0],  
+    [1, 0, 0, 1, 0],
+    [1, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1],
+    [1, 0, 1, 0, 1],
+    [1, 0, 1, 1, 0],
 ]
-​
+
 print(river_sizes(m))
-​
+
 n = [
-  [1, 1],
-  [1, 0]
+    [1, 1],
+    [1, 0]
 ]
-​
+
 print(river_sizes(n))
