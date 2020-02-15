@@ -3,13 +3,11 @@
 
 
 def sumOfTwo(a, b, v):
-
+    pass
     # examples are sorted, but are we going to actually get sorted input?
     # no, input arrays may not be sorted
-
     # sort the two arrays
     # could we use a similar two pointer strategy?
-
     # if we're hash tables, what is going in the hash tables?
     # store the elements of one of the arrays in the hash table
     # make a sum of an element from a and an element from b
@@ -22,15 +20,14 @@ def sumOfTwo(a, b, v):
     # then we've found a pair
     # return true
     # no pair was found, return false
-
     # alternative strategy that utilizes a hash table
-
     # can we consider a "easier" problem?
     # if we only had a single array and had to find two values in it
-    # that summed up to v, how would we do that?
+    # #thatummeduptov,howwouldwedothat
 
 
 def sum_of_two(arr, v):
+    pass
     # sort the input array
     # use the 2 pointer technique:
     # init one pointer at the start of the array
@@ -42,11 +39,59 @@ def sum_of_two(arr, v):
     # break out of the loop if the pointers pass each other
     # there's no two numbers that sum up to v
     # if sum of both pointers == v
-        # return
+    # return
     # check if the sum of both pointers == v
-        # if the sum of both pointers < v
-            # then that means we need a larger sum
-            # increment the left pointer
-        # if the sum of both pointers > v
-            # then that means we need a smaller sum
-            # decrement the right pointer
+    # if the sum of both pointers < v
+    # then that means we need a larger sum
+    # increment the left pointer
+    # if the sum of both pointers > v
+    # then that means we need a smaller sum
+    # decrement the right pointer
+
+# Solution that uses the two-pointer technique
+
+
+def sumOfTwo(a, b, v):
+    # sort both input arrays
+    a.sort()
+    b.sort()
+
+    # using the two pointer technique
+    # start one pointer at the beginning of one of the arrays
+    ap = 0
+    # start another pointer at the end of the other array
+    bp = len(b) - 1
+
+    # loop so long as neither of the pointers has reached the other
+    # side of its respective array
+    while ap < len(a) and bp >= 0:
+        sum = a[ap] + b[bp]
+        # check the sum of both pointers
+        if sum == v:
+            return True
+        # if the sum < v, we need a larger sum
+        if sum < v:
+            # increment the a pointer
+            ap += 1
+        # if the sum > v, we need a smaller sum
+        if sum > v:
+            # decrement the b pointer
+            bp -= 1
+    # no such pair found
+    return False
+
+# Solution that uses a set
+
+
+def sumOfTwo(a, b, v):
+    # init a set to hold all of the elements of one of the arrays
+    s = set(a)
+    # traverse each element in the other array
+    for x in b:
+        # check if v - x is in the set
+        if v - x in s:
+            # as soon as we see that some v - x is in the set
+            # then we've found a pair
+            return True
+    # no pair was found, return false
+    return False
