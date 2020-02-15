@@ -95,3 +95,16 @@ def sumOfTwo(a, b, v):
             return True
     # no pair was found, return false
     return False
+
+# Rust Implementation
+
+# use std::collections::HashSet;
+# ​
+# fn sum_of_two(a: Vec<i32>, b: Vec<i32>, v: i32) -> bool {
+# 	// init a set containing v - x for each x in array a
+# 	let set: HashSet<i32> = a.iter()
+# 		.map(|x| v - x)
+# 		.collect();
+# 	// check if any element in b is contained in the set
+# 	b.iter().any(|x| set.contains(x))
+# }
