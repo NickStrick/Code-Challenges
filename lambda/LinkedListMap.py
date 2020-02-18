@@ -59,3 +59,21 @@ class Node:
     def __init__(self, value, next=None):
         self.value = value
         self.next = next
+
+
+l1 = Node(4)
+l2 = Node(7)
+l3 = Node(15)
+l4 = Node(29)
+l5 = Node(5)
+
+l1.next = l2
+l2.next = l3
+l3.next = l4
+l4.next = l5
+
+
+def reducer(x, y): return x - y
+
+
+print(linked_list_reduce(l1, reducer, 100))
