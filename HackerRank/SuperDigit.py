@@ -15,6 +15,7 @@ def sum_digits(p):
 
 def superDigit(n, k):
 
+
     # check the length of the string
     # then check for the terminating case
     # after the first recursive call, do we still need k?
@@ -43,7 +44,7 @@ def superDigit(n, k):
 p = str(sum_digits(n) * k)
 ​
 if len(p) < 2:
-        return int(p)
+    return int(p)
 ​
 # call our sum_digits function
 # this will update p to be an integer
@@ -55,3 +56,22 @@ return superDigit(p, 1)
 # if we aren't in the base case, then P > 9
 # sum the digits together
 # how should we sum the digits together?
+
+
+# RUST IMPLEMENTATION
+
+# fn super_digit(n: String, k: u32) -> i32 {
+# 	// base case
+# 	if n.len() == 1 && k == 1 {
+# 		// parse the string `n` to an int
+# 		return n.parse::<i32>().unwrap();
+# 	}
+
+# 	// sum up the digits of string n
+# 	let sum = n.chars()
+# 		.fold(0, |acc, char| acc + char.to_digit(10).unwrap());
+
+# 	// recursively call our `super_digit` function with
+# 	// n = sum * k and k = 1
+# 	super_digit((sum * k).to_string(), 1)
+# }
