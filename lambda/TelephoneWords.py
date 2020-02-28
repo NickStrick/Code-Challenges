@@ -42,3 +42,48 @@ def tw(word_so_far, digits, words):
 
 
 print(telephone_words('130'))
+
+
+# fn telephone_words(digits: String) -> Vec<String> {
+# 	let mut words: Vec<String> = vec![];
+# 	let mapping = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
+# ​
+# 	// kick off our recursive function if we have digits
+# 	if digits.len() > 0 {
+# 		recurse(&mut words, &mapping, "".to_string(), &digits);
+# 	}
+
+# 	words
+# }
+# ​
+# // our recursive function that handles creating letter permutations
+# // words: our vector of strings we're building up
+# // mapping: the mapping of our phone numbers to digits via array indices
+# // combination: the current string we're building up
+# // next_digits: the digits we haven't processed yet
+# fn recurse(
+# 	words: &mut Vec<String>,
+# 	mapping: &[&str],
+# 	word_so_far: String,
+# 	next_digits: &str
+# ) {
+# 	match next_digits.len() {
+# 		// if we have no more digits, add this string to our words vector
+# 		0 => words.push(word_so_far),
+# 		_ => {
+# 			// grab the next digit
+# 			let digit = next_digits[0..=0].parse::<i32>().unwrap();
+# 			// access the letters for that digit
+# 			let letters = mapping[(digit - 2) as usize];
+# 			// for each letter, recurse with this letter combined with the word we're building up
+# 			for c in letters.chars() {
+# 				recurse(
+# 					words,
+# 					mapping,
+# 					format("{}{}", word_so_far, c),
+# 					&next_digits[1..]
+# 				);
+# 			}
+# 		}
+# 	}
+# }
