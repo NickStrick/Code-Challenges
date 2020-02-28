@@ -9,3 +9,7 @@ class Solution:
             if x != y:
                 count += 1
         return count
+
+
+heights = [1, 1, 4, 2, 1, 3]
+print(Solution.heightChecker(heights))
