@@ -77,3 +77,33 @@ class Solution:
 # 3. Create a new function that does the work of initing the cache and calling the recursiive function with the cache
 # 4. Alter our recursive function to take advantage of the cache - change its signature to accept the cache, update it so that
 #    it saves its answers in the cache and calls the parent function instead of itself; naive function updates the cache, parent function checks the cache
+
+
+"""
+Bottom up approach that utilizes a cache a little bit differently from 
+how we saw it in today's session. Here, we seed the cache with an initial
+value cache[0] = 1, and then compute subsequent answers based on the initial
+value we have. 
+​
+This can be done by incrementing cache[i] += cache[i - coin] when coin <= i.
+Intuitively, this is saying that the number of ways we have to make 
+cache[i - coin] in change can be leveraged to make cache[i] in change. 
+"""
+
+
+def change(amount, coins):
+        # init an array of 0s as our cache
+    cache = [0 for _ in range(amount+1)]
+    # set the initial value: there's 1 way to make 0 cents in change
+    cache[0] = 1
+    # loop through each coin
+    for coin in coins:
+                # loop through every cache index, skipping index 0
+        for n in range(1, amount+1):
+            # a coin > n can't be used to make n in change
+            if coin <= n:
+                # compute the number of ways to make n cents in terms
+                # of an answer we've already computed
+                cache[n] += cache[n - coin]
+    # fetch the answer we're looking for from the cache and return it
+    return cache[amount]
