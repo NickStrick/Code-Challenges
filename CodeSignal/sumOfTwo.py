@@ -108,3 +108,28 @@ def sumOfTwo(a, b, v):
 # 	// check if any element in b is contained in the set
 # 	b.iter().any(|x| set.contains(x))
 # }
+
+
+def sumOfTwo(a, b, v):
+
+    # are the arrays sorted?
+    # no, don't assume the arrays are sorted
+​
+# O(2(n log n)) runtime, O(1) space
+# would sorting be helpful?
+# sort both arrays
+# use a two-pointer technique, one in each array
+# start one of the pointers are the beginning of one of the arrays
+# start the other pointer at the end of the other array
+# loop so long as both pointers are still within bounds of their respective arrays
+# if the sum of both these pointer values == v, return true
+# if the sum of both these pointer values < v, then we need a larger value
+# increment the pointer at the start of the array
+# if the sum of both these pointer values > v, then we need a smaller value
+# decrement the pointer at the end of the array
+​
+# the above idea is a variant of the sliding window technique
+# the idea: having pointers at opposite ends of a sorted array
+# if the sum of the two pointers is too small, increment the "left" pointer
+# if the sum of the two pointers is too big, decrement the "right" pointer
+​
