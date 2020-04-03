@@ -14,3 +14,14 @@ class Solution:
                 num = math.floor(num/10)
                 currSum += digit*digit
             return currSum
+
+        sumSet = set()
+
+        while n != 1:
+            print(sumSet, n)
+            sumSet.add(n)
+            n = SumDigits(n)
+            if n in sumSet:
+                return False
+            if n == 1:
+                return True
