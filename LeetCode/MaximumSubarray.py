@@ -15,3 +15,6 @@ class Solution:
                 currSum = 0
 
         return max
+
+
+maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])  # 6
