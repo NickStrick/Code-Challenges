@@ -21,3 +21,7 @@ class Solution:
                 second = None
 
         return first
+
+
+middleNode([1, 2, 3, 4, 5])
+middleNode([1, 2, 3, 4, 5, 6])
