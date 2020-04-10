@@ -14,3 +14,6 @@ def backspaceCompare(S: str, T: str) -> bool:
     index = S.find('#')
     S = backspace(S)
     print(S.find('#'), S)
+
+
+print(backspaceCompare('#ab##c', 'ab###c'))
