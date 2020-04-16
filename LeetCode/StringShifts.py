@@ -17,3 +17,6 @@ def stringShift(self, s: str, shift: List[List[int]]) -> str:
                 i += s
                 s = i
     return s
+
+
+print(stringShift("abc"), [[0, 1], [1, 2]])
