@@ -16,3 +16,6 @@ def lastStoneWeight(self, stones: List[int]) -> int:
             stones.append(new)
 
     return stones[0]
+
+
+print(lastStoneWeight([2, 7, 4, 1, 8, 1]))  # 1
