@@ -50,3 +50,7 @@ def longestPalindrome(self, s: str) -> str:
         k = k + 1
     print(s[start:start+maxLength])
     return s[start:start+maxLength]
+
+
+longestPalindrome("babad")
+longestPalindrome("cbbd")
