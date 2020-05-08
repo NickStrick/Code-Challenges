@@ -12,3 +12,6 @@ def solution(A):
             return smallestInt
 
     return smallestInt
+
+
+print(solution([1, 3, 6, 4, 1, 2]))
