@@ -35,3 +35,8 @@ function threeEntries(arr, k) {
 
     return solutionSet
 }
+
+
+
+input = [20, 303, 3, 4, 25]
+console.log(threeEntries(input, 49)) // true
