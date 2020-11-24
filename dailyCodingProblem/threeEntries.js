@@ -13,3 +13,25 @@
 
 // can we do this recursively?
 // 
+
+function threeEntries(arr, k) {
+    let solutionSet = []
+    let currSet = []
+
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+        if (arr[i] < k) {
+            currSet = [arr[i]]
+        }
+
+    }
+    entryLoop()
+
+    function entryLoop(total, index, currSet) {
+        if (arr[index])
+    }
+
+
+    return solutionSet
+}
