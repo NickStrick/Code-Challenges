@@ -5,4 +5,22 @@
 
 // Complete the arrayManipulation function below.
 
-function arrayManipulation(n, queries) { }
+function arrayManipulation(n, queries) {
+
+    let res = new Array(n).fill(0);
+    let biggest = 0
+    console.log(n, queries, res)
+
+    for (let i = 0; i < queries.length; i++) {
+        let query = queries[i]
+        for (let j = query[0] - 1; j < query[1]; j++) {
+            res[j] += query[2]
+            if (res[j] > biggest) {
+                biggest = res[j]
+            }
+        }
+
+    }
+    return biggest
+
+}
