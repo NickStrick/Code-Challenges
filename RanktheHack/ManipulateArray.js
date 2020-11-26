@@ -4,3 +4,5 @@
 // queries - a two dimensional array of queries where each queries[i] contains three integers, a, b, and k.
 
 // Complete the arrayManipulation function below.
+
+function arrayManipulation(n, queries) { }
