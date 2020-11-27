@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/longest-palindromic-substring
 
-def longestPalindrome(self, s):
+def longestPalindrome( s):
         """
         :type s: str
         :rtype: str
@@ -60,3 +60,8 @@ def longestPalindrome(self, s):
             k = k + 1
         print(s[start:start+maxLength])
         return s[start:start+maxLength]
+
+
+print(longestPalindrome("babab"))
+print(longestPalindrome("cddc"))
+print(longestPalindrome("hagahb"))
