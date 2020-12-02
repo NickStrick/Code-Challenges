@@ -24,3 +24,15 @@ function readLine(nums, d) {
     console.log(nums.join(' '));
     return nums.join(' ')
 }
+
+
+
+function main() {
+    const nd = inputString[0].split(' ');
+
+    const n = parseInt(nd[0], 10);
+
+    const d = parseInt(nd[1], 10);
+
+    const a = readLine(inputString[1].split(' '), d).split(' ').map(aTemp => parseInt(aTemp, 10));
+}
