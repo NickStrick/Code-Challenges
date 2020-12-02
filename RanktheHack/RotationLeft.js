@@ -1,0 +1,2 @@
+// Left Rotation
+'use strict';
