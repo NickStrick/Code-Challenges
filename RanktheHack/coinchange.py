@@ -30,3 +30,9 @@ def change(amount, coins):
 
     # we only ever took the last coin into account
     return change(amount - coins[-1], coins) + change(amount, coins[:-1])
+
+
+
+print(change(5, [1, 2, 5]))
+print(change(3, [2]))
+print(change(10, [10]))
