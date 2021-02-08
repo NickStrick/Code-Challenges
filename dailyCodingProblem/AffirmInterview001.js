@@ -48,8 +48,21 @@ function affirmQuestion (input, fee){
         // stroer in solutoin set
         solutions.push([buy, sell])
     }
+    let res = []
+    for (let i = 0; i < solutions.length; i++){
+        if (solutions[i[1]] - solutions[i[0]] <= fee){
+            if (solutions[i[0]] < solutions[(i+1)[0]]){
+                res.push([solutions[i[0]], solutions[(i+1)[1]]])
+            }else{
+                continue;
+            }
+        }else{
+            res.push(solutions[i])
+        }
+    }
 
-    return solutions
+
+    return res
 }
 
 console.log(affirmQuestion([1,3,2,8,4,10], 2))
