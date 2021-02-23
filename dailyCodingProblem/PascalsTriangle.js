@@ -1,3 +1,4 @@
+//https://binarysearch.com/?ref=dcp
 // This problem was asked by Stitch Fix.
 
 // Pascal's triangle is a triangular array of integers constructed with the following formula:
