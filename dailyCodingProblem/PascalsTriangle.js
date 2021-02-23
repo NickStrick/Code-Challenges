@@ -20,3 +20,7 @@ function pascalTriangle(){
     // calculate current row
     // save current row
 }
+
+
+print(pascalTriangle(5))
+print(pascalTriangle(10))
