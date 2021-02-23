@@ -15,10 +15,17 @@
 
 // Bonus: Can you do this using only O(k) space?
 
-function pascalTriangle(){
+function pascalTriangle(k){
     // create a for loop: until row equals k
     // calculate current row
     // save current row
+    let result = []
+    for (let i = 0; i< k; i++){
+
+    }
+
+
+    return result
 }
 
 
