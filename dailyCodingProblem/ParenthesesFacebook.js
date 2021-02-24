@@ -4,3 +4,7 @@
 // the minimum number of insertions and deletions. If there are multiple solutions, return any of them.
 
 // For example, given "(()", you could return "(())". Given "))()(", you could return "()()()()".
+
+function findParentheses(str){
+    
+}
