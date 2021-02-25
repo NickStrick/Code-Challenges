@@ -9,6 +9,10 @@
 
 function findParentheses(str){
 
+    // create a stack
+    // reference parenthese opposite
+    // create a loop and chec each iteration
+
 }
 
 console.log(findParentheses("(()"))     //(())
