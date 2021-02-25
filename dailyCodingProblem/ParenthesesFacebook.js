@@ -13,6 +13,12 @@ function findParentheses(str){
     // reference parenthese opposite
     // create a loop and chec each iteration
 
+
+    for (let i = 0; i < str.length; i++){
+        console.log(str[i])
+    }
+
+    return true;
 }
 
 console.log(findParentheses("(()"))     //(())
