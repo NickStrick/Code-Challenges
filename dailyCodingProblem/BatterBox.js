@@ -19,3 +19,11 @@
 //     /
 //    1
 // We do not remove the tree at the root or its left child because it still has a 1 as a descendant.
+
+function pruneProblem(headNode){
+
+
+}
+
+console.log(pruneProblem());
+console.log(pruneProblem());
