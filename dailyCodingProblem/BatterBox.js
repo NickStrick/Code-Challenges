@@ -47,7 +47,19 @@ class Node {
     }
     
     print(){
-        
+        let count = 1
+        function printNode (node,count) {
+            let myCount = count
+           console.log(node.value, count)
+
+           if (node.left){
+               printNode(node.left, myCount+1)
+           } 
+           if (node.right){
+            printNode(node.right, myCount+1)
+            }
+        }
+        printNode(this, count);
     }
   }
 
@@ -65,3 +77,4 @@ rootOne.right.right.right = new Node(0);
 
 console.log(pruneProblem(rootOne));
 console.log(pruneProblem());
+rootOne.print()
