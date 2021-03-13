@@ -37,6 +37,15 @@
 function pruneProblem(headNode){
     // if node has no children, check if 1 or 0, if 0 delete node
     // if children, call function on children
+
+    function nodeCheck(node, prevNode){
+        if (node.left == null && node.right == null && node.value == 0){
+            prevNode.left = null;
+        }
+
+    }
+    nodeCheck(headNode.left, headNode)
+    nodeCheck(headNode.right,headNode)
 }
 
 class Node {
@@ -47,6 +56,7 @@ class Node {
     }
     
     print(){
+        console.log(_____TREE_____)
         let count = 1
         function printNode (node,count) {
             let myCount = count
@@ -60,6 +70,7 @@ class Node {
             }
         }
         printNode(this, count);
+        console.log(______________)
     }
   }
 
@@ -77,4 +88,3 @@ rootOne.right.right.right = new Node(0);
 
 console.log(pruneProblem(rootOne));
 console.log(pruneProblem());
-rootOne.print()
