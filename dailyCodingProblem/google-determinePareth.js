@@ -6,3 +6,8 @@
 
 // For example, (()* and (*) are balanced. )*( is not balanced.
 
+
+function determineBalanced(string) {
+
+}
+
