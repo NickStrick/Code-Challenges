@@ -38,14 +38,19 @@ function pruneProblem(headNode){
     // if node has no children, check if 1 or 0, if 0 delete node
     // if children, call function on children
 
-    function nodeCheck(node, prevNode){
-        if (node.left == null && node.right == null && node.value == 0){
-            prevNode.left = null;
+    function nodeCheck(node, prevNode, dir){
+        if (node.left == null && node.right == null){
+            if ( node.value == 0){
+                prevNode[dir] = null;
+            }
+        }else{
+            nodeCheck(node.left, node, 'left')
+            nodeCheck(node.right, node, 'right') 
         }
 
     }
-    nodeCheck(headNode.left, headNode)
-    nodeCheck(headNode.right,headNode)
+    nodeCheck(headNode.left, headNode, 'left')
+    nodeCheck(headNode.right,headNode, 'right')
 }
 
 class Node {
