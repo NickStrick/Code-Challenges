@@ -71,6 +71,9 @@ function pruneProblem(headNode){
         
 
     }
+    if ( !headNode.left && !headNode.right && headNode.value == 0){
+        return false;
+    }
     nodeCheck(headNode.left, headNode, 'left')
     nodeCheck(headNode.right,headNode, 'right')
     return headNode
@@ -118,7 +121,8 @@ rootTwo.right = new Node(0);
 rootTwo.right.left = new Node(1);
 rootTwo.right.left.right = new Node(1);
 rootTwo.right.left.left = new Node(0);
-rootOne.right.right.right = new Node(1);
+rootTwo.right.right = new Node(0);
+rootTwo.right.right.right = new Node(1);
 
 
 rootTwo.print()
