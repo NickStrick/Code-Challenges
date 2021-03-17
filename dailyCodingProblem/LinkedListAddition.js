@@ -18,3 +18,10 @@
  
 //  4 -> 2 -> 1
  
+
+function llAddition(listOne, listTwo){
+
+
+}
+
+llAddition();
