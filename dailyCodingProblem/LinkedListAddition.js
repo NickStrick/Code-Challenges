@@ -24,4 +24,31 @@ function llAddition(listOne, listTwo){
 
 }
 
-llAddition();
+class Node {
+    constructor(value){
+        this.value = value
+        this.next = null
+    }
+    print(){
+        console.log('_____TREE_____')
+        function printNode (node) {
+            
+           
+
+           if (node.next){
+               printNode(node.next)
+           } 
+           console.log(node.value)
+        }
+        printNode(this);
+        console.log('______________')
+    }
+}
+
+let listFirst = new Node(9);
+listFirst.next = new Node(9);
+let listSecond = new Node(5);
+listSecond.next = new Node(2);
+
+listSecond.print();
+llAddition(listFirst, listSecond); // 124 //  4 -> 2 -> 1
