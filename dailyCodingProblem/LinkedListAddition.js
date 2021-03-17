@@ -19,9 +19,24 @@
 //  4 -> 2 -> 1
  
 
+// 9 + 5 = 14
+// 9 + 2 = 11(0)
+// 14 + 110 = 124;
+
 function llAddition(listOne, listTwo){
 
-
+    let nodeOne = listOne;
+    let nodeTwo = listTwo;
+    
+    while (nodeOne || nodeTwo){
+        let firstVal = nodeOne ? nodeOne.value : 0;
+        let secondVal = nodeTwo ? nodeTwo.value : 0;
+        resultVal = firstVal + secondVal;
+        console.log(resultVal, firstVal, secondVal);
+        
+        nodeOne = nodeOne.next;
+        nodeTwo = nodeTwo.next;
+    }
 }
 
 class Node {
