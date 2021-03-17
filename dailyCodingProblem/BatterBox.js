@@ -39,18 +39,24 @@ function pruneProblem(headNode){
     // if children, call function on children
 
     function nodeCheck(node, prevNode, dir){
-        if (node.left == null && node.right == null){
-            if ( node.value == 0){
-                prevNode[dir] = null;
-            }
-        }else{
+        console.log(node.value)
+        if (node.left){
             nodeCheck(node.left, node, 'left')
-            nodeCheck(node.right, node, 'right') 
         }
+        if (node.right){
+            nodeCheck(node.right, node, 'right')
+        }
+        if ( !node.left && !node.right && node.value == 0){
+                prevNode[dir] = null; 
+                // console.log('del')
+            }
+            console.log('end')
+        
 
     }
     nodeCheck(headNode.left, headNode, 'left')
     nodeCheck(headNode.right,headNode, 'right')
+    return headNode
 }
 
 class Node {
@@ -61,7 +67,7 @@ class Node {
     }
     
     print(){
-        console.log(_____TREE_____)
+        console.log('_____TREE_____')
         let count = 1
         function printNode (node,count) {
             let myCount = count
@@ -75,7 +81,7 @@ class Node {
             }
         }
         printNode(this, count);
-        console.log(______________)
+        console.log('______________')
     }
   }
 
@@ -90,6 +96,6 @@ rootOne.right.right = new Node(0);
 rootOne.right.right.right = new Node(0);
 
 
-
-console.log(pruneProblem(rootOne));
-console.log(pruneProblem());
+rootOne.print()
+pruneProblem(rootOne).print()
+// console.log(pruneProblem());
