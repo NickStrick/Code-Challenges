@@ -27,16 +27,24 @@ function llAddition(listOne, listTwo){
 
     let nodeOne = listOne;
     let nodeTwo = listTwo;
+    let resArray = [];
     
     while (nodeOne || nodeTwo){
         let firstVal = nodeOne ? nodeOne.value : 0;
         let secondVal = nodeTwo ? nodeTwo.value : 0;
         resultVal = firstVal + secondVal;
-        console.log(resultVal, firstVal, secondVal);
+        // console.log(resultVal, firstVal, secondVal);
+        resArray.push(resultVal);
         
         nodeOne = nodeOne.next;
         nodeTwo = nodeTwo.next;
     }
+
+    let sumArray = []
+    for (let i = 0; i<resArray.length;i++){
+        
+    }
+    console.log(resArray);
 }
 
 class Node {
