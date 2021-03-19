@@ -42,7 +42,7 @@ function llAddition(listOne, listTwo){
 
     let sumArray = []
     for (let i = 0; i<resArray.length;i++){
-        
+        sumArray.append(resArray[i])
     }
     console.log(resArray);
 }
