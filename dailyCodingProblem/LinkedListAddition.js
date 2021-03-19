@@ -49,6 +49,12 @@ function llAddition(listOne, listTwo){
         sumArray.push(resItArray.join(''))
     }
     console.log(resArray, sumArray);
+
+    let finalResult = 0;
+    for (let i = 0; i<sumArray.length;i++){
+        finalResult += parseInt(sumArray[i])
+    }
+    console.log(finalResult)
 }
 
 class Node {
