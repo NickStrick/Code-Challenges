@@ -62,7 +62,7 @@ function llAddition(listOne, listTwo){
         }
 
         console.log(newArr)
-        // finalResult += parseInt(sumArray[i])
+        finalResult += parseInt(sumArray[i])
     }
     console.log(finalResult, headResult)
 }
