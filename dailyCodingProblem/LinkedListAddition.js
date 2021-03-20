@@ -95,3 +95,12 @@ listSecond.next = new Node(2);
 
 listSecond.print();
 llAddition(listFirst, listSecond); // 124 //  4 -> 2 -> 1
+
+let listFirst = new Node(9);
+listFirst.next = new Node(9);
+let listSecond = new Node(5);
+listSecond.next = new Node(2);
+listSecond.next = new Node(1);
+
+listSecond.print();
+llAddition(listFirst, listSecond); // 620 //  0 -> 2 -> 6
