@@ -11,3 +11,6 @@
 function anagramSearch(W, S){
 
 }
+
+
+console.log(anagramSearch("ab", "abxaba")) // [0,3,4]
