@@ -10,6 +10,10 @@
 
 function anagramSearch(W, S){
 
+    // at each indicy check if letter is in anagram
+    // if is, set object and check  off what in word has been used
+    //if from starting indicy, uses all letters in object, att indicy to result list
+
 }
 
 
