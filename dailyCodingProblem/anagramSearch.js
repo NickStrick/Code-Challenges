@@ -23,7 +23,8 @@ function anagramSearch(W, S){
 
     //function to find anagram
     function findAnagram(){
-
+            //loop through string to check if current index and next indexes are true
+            // add strarting index to result array
     }
 
     for (let i = 0; i < S.length; i++){
@@ -32,7 +33,7 @@ function anagramSearch(W, S){
         }
     }
     
-
+    //return result array
 }
 
 
