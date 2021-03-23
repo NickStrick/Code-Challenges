@@ -14,6 +14,25 @@ function anagramSearch(W, S){
     // if is, set object and check  off what in word has been used
     //if from starting indicy, uses all letters in object, att indicy to result list
 
+    //set default checklist
+    let wCheckArr = W.split('');
+    let wCheckDefault = {}
+    for (let i = 0; i< wCheckArr.length;i++){
+        wCheckDefault[wCheckArr[i]] = false
+    }
+
+    //function to find anagram
+    function findAnagram(){
+
+    }
+
+    for (let i = 0; i < S.length; i++){
+        if (wCheckDefault.hasOwnProperty(S[i])){
+            findAnagram();
+        }
+    }
+    
+
 }
 
 
