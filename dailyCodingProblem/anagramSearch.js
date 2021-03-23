@@ -18,18 +18,26 @@ function anagramSearch(W, S){
     let wCheckArr = W.split('');
     let wCheckDefault = {}
     for (let i = 0; i< wCheckArr.length;i++){
-        wCheckDefault[wCheckArr[i]] = false
+        if (wCheckDefault[wCheckArr[i]]){
+            wCheckDefault[wCheckArr[i]].push(false)
+        }else{
+        wCheckDefault[wCheckArr[i]] = [false]
+        }
     }
+    console.log(wCheckDefault);
 
     //function to find anagram
-    function findAnagram(){
+    function findAnagram(index){
             //loop through string to check if current index and next indexes are true
             // add strarting index to result array
+        let wordCheck = {...wCheckDefault}
+
+
     }
 
     for (let i = 0; i < S.length; i++){
         if (wCheckDefault.hasOwnProperty(S[i])){
-            findAnagram();
+            findAnagram(i);
         }
     }
     
@@ -37,4 +45,4 @@ function anagramSearch(W, S){
 }
 
 
-console.log(anagramSearch("ab", "abxaba")) // [0,3,4]
+console.log(anagramSearch("aba", "abxaba")) // [0,3,4]
