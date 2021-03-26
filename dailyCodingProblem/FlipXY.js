@@ -12,6 +12,8 @@ function flipIt(xy){
     // if y in x section, flip y
     // if x in y section, flip x
     // count flips, return amount
+
+    // determine if y section if more then one y in a row, when it flips , reverse the function
 }
 
 console.log(flipIt('xyxxxyxyy')) // returns 2 // 2 slips, index 1 & 5
