@@ -8,6 +8,10 @@
 
 function flipIt(xy){
 
+    // make sure all x's come before all y's
+    // if y in x section, flip y
+    // if x in y section, flip x
+    // count flips, return amount
 }
 
 console.log(flipIt('xyxxxyxyy')) // returns 2 // 2 slips, index 1 & 5
