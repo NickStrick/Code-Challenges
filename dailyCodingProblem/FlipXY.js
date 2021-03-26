@@ -6,6 +6,8 @@
 // Determine how many times you would need to apply this operation to ensure that all x's come before all y's. 
 // In the preceding example, it suffices to flip the second and sixth characters, so you should return 2.
 
-function flipIt(){
-    
+function flipIt(xy){
+
 }
+
+console.log(flipIt('xyxxxyxyy')) // returns 2 // 2 slips, index 1 & 5
