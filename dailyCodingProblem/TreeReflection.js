@@ -14,9 +14,17 @@
     // can it be more then four?
     //what are the requirements for a new tree to be made?
     // can i use a stack or a queue?
+    //  
 
 
-    
+    //what is the best way to approach this probem
+
+    // we can to this recursiveley, and make sure every iteration of the recursion is the same, so long as it doesnt have a counter part.
+    // we can make a queue, and track the index of the tree along with the queue to determine symitry within the tree.
+    // can a stack be used?
+    // what data structures could be used here?
+    // 
+
 
 function determineSymetrical(treeRoot){
 
