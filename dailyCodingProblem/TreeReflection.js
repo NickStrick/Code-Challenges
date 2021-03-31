@@ -9,6 +9,15 @@
 // 9              9
 // Given a k-ary tree, determine whether it is symmetric.
 
+//questions:
+    //how many children can a tree nod ehave?
+    // can it be more then four?
+    //what are the requirements for a new tree to be made?
+    // can i use a stack or a queue?
+
+
+    
+
 function determineSymetrical(treeRoot){
 
 }
