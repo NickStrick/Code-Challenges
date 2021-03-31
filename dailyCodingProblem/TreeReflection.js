@@ -8,3 +8,19 @@
 //   /           \
 // 9              9
 // Given a k-ary tree, determine whether it is symmetric.
+
+function determineSymetrical(treeRoot){
+
+}
+
+class TreeNode {
+    constructor(value){
+        this.value = value;
+        this.children = [null,null,null,null]
+    }
+    printTree(){
+        console.log(this.value)
+    }
+}
+
+console.log(determineSymetrical())
