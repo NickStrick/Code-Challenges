@@ -5,9 +5,12 @@ function squareRoot(n){
     let i = 0;
     let rooted = i * i;
 
-    while( rooted != n && i < 50){
+    while( rooted != n && rooted < n){
         i++
         rooted = i*i;
     }
     return i;
 }
+
+console.log(squareRoot(9));
+console.log(squareRoot(49));
