@@ -23,3 +23,33 @@
  * The function is expected to return a BOOLEAN.
  * The function accepts STRING string as parameter.
  */
+
+
+function balancedBrackets(string){
+    let brackets = {'{':'}','[':']', '(': ')', '|':'|'};
+    let endBrackets = new Set(['}',']',')','|']);
+
+    let stack = [];
+
+
+    for (let i = 0; i < string.length; i++){
+        if (string[i] in brackets || endBrackets.has(string[i])){
+            if( string[i] in brackets){
+                stack.unshift(string[i]);
+            }else if(stack.length > 0 && string[i] == brackets[stack[0]]){
+                //pop from stackue
+                stack.shift()
+            }
+        }
+    }
+
+    if (stack.length == 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(balancedBrackets("[(])"));
+console.log(balancedBrackets("[]()"));
+console.log(balancedBrackets("[this]()sentence"));
