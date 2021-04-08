@@ -53,3 +53,43 @@ function balancedBrackets(string){
 console.log(balancedBrackets("[(])"));
 console.log(balancedBrackets("[]()"));
 console.log(balancedBrackets("[this]()sentence"));
+
+/* Version 2
+ * Complete the 'balancedBrackets' function below.
+ *
+ * The function is expected to return a BOOLEAN.
+ * The function accepts STRING string as parameter.
+
+function balancedBrackets(string) {
+    // add brackets in string to a stack, pop them off the stack when a
+   ending is reached
+    // if anything is left in the stack by the end, return false
+    // if anything overlaps, return false
+    // else return true
+    const stringArr = string.split('')
+    const brackets = ['[', ']', '{', '}', '(', ')', '|', '|' ]
+    const bracketsLook = {'[': ']', '{': '}', '(': ')', '|': '|' }
+    let stack = []
+    for (let i = 0; i< stringArr.length; i++){
+    let currChar = stringArr[i]
+    if (stack.length > 0){
+    if (currChar == bracketsLook[stack[stack.length-1]]){
+    console.log(stack)
+    stack.pop()
+    continue;
+    }
+    }
+    if (currChar in bracketsLook){
+        stack.push(currChar)
+        console.log(currChar)
+        }
+       
+        }
+        if (stack.length == 0) {
+        return true
+        }else{
+        return false
+        }
+       }
+       
+   */
