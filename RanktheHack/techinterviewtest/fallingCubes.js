@@ -48,6 +48,21 @@ TEST INPUTS - step by step
 
 function fallingCubes(matrix){
 
+    /*
+        plan 2
+        loop through until row has no solids
+            for each solid check 
+                if brick undernearth
+                    count up, change brick into free space
+                continue down matrix
+            MOVE SOLIDS DOWN BY ONE
+                make top row free spaces
+                move solids down
+            repeat
+
+    */
+   
+
     for( let row = 0; row < matrix.length; row++){
         for (let i = 0; i< row.length; i++){
 
