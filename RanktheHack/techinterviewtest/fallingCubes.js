@@ -45,3 +45,7 @@ TEST INPUTS - step by step
             return 2
 
 */
+
+function fallingCubes(matrix){
+    
+}
