@@ -47,5 +47,11 @@ TEST INPUTS - step by step
 */
 
 function fallingCubes(matrix){
-    
+
 }
+
+let matrix1 = [  ['*', '*', '*'],
+                ['#', '*', '*'],
+                ['.', '*', '#'],
+                ['#', '.', '.']]
+console.log(fallingCubes(matrix1))
