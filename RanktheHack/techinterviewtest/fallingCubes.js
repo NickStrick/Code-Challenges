@@ -48,6 +48,12 @@ TEST INPUTS - step by step
 
 function fallingCubes(matrix){
 
+    for( let row = 0; row < matrix.length; row++){
+        for (let i = 0; i< row.length; i++){
+
+        }
+    }
+
 }
 
 let matrix1 = [  ['*', '*', '*'],
