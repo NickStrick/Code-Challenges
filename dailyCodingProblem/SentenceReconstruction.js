@@ -8,5 +8,14 @@
 // Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
 function sentenceReconstruction(dictList, s){
-    
+
 }
+let diction = ['quick', 'brown', 'the', 'fox']
+let sentence = "thequickbrownfox"
+
+console.log(sentenceReconstruction(diction, sentence)) // return ['the', 'quick', 'brown', 'fox']
+
+diction = ['bed', 'bath', 'bedbath', 'and', 'beyond'];
+sentence = "bedbathandbeyond"
+
+console.log(sentenceReconstruction(diction, sentence)) // return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond']
