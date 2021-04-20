@@ -8,6 +8,11 @@
 
 // Bonus: Find an O(log N) solution if k = 2.
 
-function lastPrisoner(N, k){
+function lastPrisoner(n, k){
     //write your plan here
 }
+
+
+let n = 5
+let k = 2
+console.log(lastPrisoner(n, k))
