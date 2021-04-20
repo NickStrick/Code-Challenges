@@ -7,3 +7,7 @@
 // For example, if N = 5 and k = 2, the order of executions would be [2, 4, 1, 5, 3], so you should return 3.
 
 // Bonus: Find an O(log N) solution if k = 2.
+
+function lastPrisoner(N, k){
+    //write your plan here
+}
