@@ -10,6 +10,14 @@
 
 function lastPrisoner(n, k){
     //write your plan here
+
+    // test inputs
+    // n = 5, k=2
+        //      - 2
+        //2,3,4 - 4
+        //4,5,1 - 1
+        //1!1,5 - 5
+        //5,4,3 - 3
 }
 
 
