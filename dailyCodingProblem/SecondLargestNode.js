@@ -5,6 +5,10 @@
 
 function secondLargestNode(root){
 
+    // if binary search tree has larger values on the right, and lesser on the left,
+    //      have a pointer and root and root.right untill furthest right
+            // return the node previous to largest
+
 }
 
 let root = {
