@@ -15,4 +15,4 @@ function distinctLongestSubstring(s, k){
 }
 let s = "abcba"
 let k = 2
-console.log(distinctLongestSubstring(s,k))
+console.log(distinctLongestSubstring(s,k)) //bcb
