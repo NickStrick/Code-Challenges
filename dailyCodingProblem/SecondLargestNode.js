@@ -4,5 +4,12 @@
 // Given the root to a binary search tree, find the second largest node in the tree.
 
 function secondLargestNode(root){
-    
+
 }
+
+let root = {
+    value: 1,
+    left: null,
+    right: null,
+}
+console.log(secondLargestNode(root))
