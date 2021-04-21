@@ -13,3 +13,6 @@ function distinctLongestSubstring(s, k){
 
         // return longest
 }
+let s = "abcba"
+let k = 2
+console.log(distinctLongestSubstring(s,k))
