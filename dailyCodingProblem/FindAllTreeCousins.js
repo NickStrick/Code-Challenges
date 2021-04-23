@@ -10,3 +10,7 @@
 //  / \   \
 // 4   5   6
 // Given a binary tree and a particular node, find all cousins of that node
+
+function findCousins(){
+    
+}
