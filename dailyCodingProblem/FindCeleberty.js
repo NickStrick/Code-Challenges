@@ -5,3 +5,8 @@
 // which returns True if person a knows person b, else False.
 
 // Given a list of N people and the above operation, find a way to identify the celebrity in O(N) time.
+
+
+function findCeleberty(people){
+
+}
