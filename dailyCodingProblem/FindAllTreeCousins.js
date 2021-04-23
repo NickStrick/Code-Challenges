@@ -12,5 +12,15 @@
 // Given a binary tree and a particular node, find all cousins of that node
 
 function findCousins(){
-    
+
 }
+
+class Node{
+    constructor(value){
+        this.val = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+console.log(findCousins())
