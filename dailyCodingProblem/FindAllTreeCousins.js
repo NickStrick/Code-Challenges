@@ -11,8 +11,8 @@
 // 4   5   6
 // Given a binary tree and a particular node, find all cousins of that node
 
-function findCousins(){
-
+function findCousins(root, targetValue){
+    //find all cousins of tragetValue in root binary tree
 }
 
 class Node{
@@ -23,4 +23,11 @@ class Node{
     }
 }
 
-console.log(findCousins())
+let head = new Node(1)
+head.left = new Node(2)
+head.right = new Node(3)
+head.left.left = new Node(4)
+head.left.right = new Node(5)
+head.right.right = new Node(6)
+
+console.log(findCousins(head, 6))
