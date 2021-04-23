@@ -13,6 +13,10 @@
 
 function findCousins(root, targetValue){
     //find all cousins of tragetValue in root binary tree
+
+    // basically have a counter that counts the amount of parents a node has
+    // if the node has the same amount of parents, 
+    // but the imediate parent is different, add it to the cousins list
 }
 
 class Node{
