@@ -7,6 +7,20 @@
 // Given a list of N people and the above operation, find a way to identify the celebrity in O(N) time.
 
 
+class Person {
+    constructor(id, peopleList) {
+      this.id = id;
+      this.peopleList = peopleList;
+    }
+
+    knows = (a,b) => {
+        if (b in a.peopleList){
+            return true;
+        }
+        return false;
+    }
+  }
+
 function findCeleberty(people){
 
 }
