@@ -31,15 +31,21 @@ class Person {
 
 function findCeleberty(people){
 
+    //understand
+
+    //   so basically, find the celeberty only using the knows() method
+    //      start with first person, check if knows the next, if not continue, if start on next person
+
 }
 
 
 // Tests
-let partyList = []
-partyList.push(new Person(1, []))
-partyList.push(new Person(2, [1,5]))
-partyList.push(new Person(3, [1,2]))
-partyList.push(new Person(4, [1,3,5]))
-partyList.push(new Person(5, [1,3,4]))
+let partyList = {
+1 : new Person(1, []),
+2: new Person(2, [1,5]),
+3: new Person(3, [1,2]),
+4: new Person(4, [1,3,5]),
+5: new Person(5, [1,3,4])
+}
 
-console.log(findCeleberty())
+console.log(findCeleberty(partyList))
