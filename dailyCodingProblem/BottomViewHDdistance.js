@@ -29,6 +29,11 @@
 
 function hdBottomView(root){
 
+    //plan
+    // do a breath first search
+    // keep  and object of each lowest node at each horizontal distance 
+    // update object as the tree is traversed
+
 }
 
 class Node{
