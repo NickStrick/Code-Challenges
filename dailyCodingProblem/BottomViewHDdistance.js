@@ -28,5 +28,9 @@
 //  Given the root to a binary tree, return its bottom view.
 
 function hdBottomView(root){
-    
+
 }
+
+let root = {}
+
+console.log(hdBottomView(root))
