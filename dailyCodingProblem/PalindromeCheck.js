@@ -5,5 +5,9 @@
 // Do not convert the integer into a string.
 
 function findPal(){
-    
+
 }
+
+console.log(findPal(121)) // true
+console.log(findPal(888)) // true
+console.log(findPal(678)) // false
