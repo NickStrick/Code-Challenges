@@ -9,6 +9,10 @@
 // You can generate random numbers between 0 and 1 uniformly.
 
 function probabilityGenerator(n, probabilities){
+    //plan
+    // generate a random int between 0 and 100
+    // if int is probability[i] + all previous proababilies times 10
+        // return n[i]
 
 }
 
