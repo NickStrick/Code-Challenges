@@ -5,3 +5,11 @@
 function GraphColors(graph, k){
 
 }
+
+let matrix = [
+    [0,1,1],
+    [1,1,0],
+    [1,0,0],
+]
+
+console.log(GraphColors(matrix, 3)) // true
