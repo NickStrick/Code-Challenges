@@ -11,3 +11,7 @@
 function probabilityGenerator(n, probabilities){
 
 }
+
+console.log(probabilityGenerator([1,2,3,4], [0.1,0.5,0.2,0.2]));
+
+console.log(probabilityGenerator([5,6,7,8], [0.2,0.2,0.5,0.1]));
