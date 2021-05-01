@@ -9,5 +9,8 @@
 // Given [-4, 5, 1, 0], return 6 as we choose the numbers 5 and 1.
 
 function subarraySum(arr){
-    
+
 }
+
+console.log(subarraySum([8,-1,3,4])) // 15
+console.log(subarraySum([-4,5,1,0])) // 6
