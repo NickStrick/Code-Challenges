@@ -9,6 +9,10 @@
 // Given [-4, 5, 1, 0], return 6 as we choose the numbers 5 and 1.
 
 function subarraySum(arr){
+    //plan
+    // walk through array add all the positives together
+    //      keep track of the lowest negative number
+    // if through array and no positives found, return lowest negative 
 
 }
 
