@@ -5,5 +5,7 @@
 // For example, given [3, 7, 5, 6, 9], you should return (1, 3).
 
 function findSortBounds(arr){
-    
+
 }
+
+console.log(findSortBounds([3,7,5,6,9]))
