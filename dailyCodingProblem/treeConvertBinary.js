@@ -22,3 +22,7 @@
 //  5         4
 //          /   \
 //         6     7
+
+function covertTree(root){
+    
+}
