@@ -24,5 +24,15 @@
 //         6     7
 
 function covertTree(root){
-    
+
 }
+
+class Node{
+    constructor(val){
+        this.val = val;
+        this.right = null;
+        this.left = null;
+    }
+}
+
+console.log(covertTree())
