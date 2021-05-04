@@ -6,6 +6,11 @@
 
 function findSortBounds(arr){
 
+    //plan
+    // at each iteration check if the next number is smaller
+    //  if it is, start to count the sort bounds, and go until no sorting is needed
+    //  return the  number of bounds and the length of those bounds
+
 }
 
 console.log(findSortBounds([3,7,5,6,9]))
