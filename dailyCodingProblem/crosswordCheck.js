@@ -12,5 +12,21 @@
 // Write a program to determine whether a given matrix qualifies as a crossword grid.
 
 function crosswordCheck(matrix){
-    
+
 }
+
+let matrix = [
+    [0,1,1,0],
+    [1,1,1,1],
+    [1,1,1,1],
+    [0,1,1,0]
+]
+
+let matrix2 = [
+    [0,1,1,0],
+    [1,1,1,0],
+    [1,1,1,1],
+    [0,1,1,1]
+]
+console.log(crosswordCheck(matrix)) // true
+console.log(crosswordCheck(matrix2)) // false
