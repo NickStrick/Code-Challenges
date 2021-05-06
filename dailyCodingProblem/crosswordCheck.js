@@ -12,6 +12,15 @@
 // Write a program to determine whether a given matrix qualifies as a crossword grid.
 
 function crosswordCheck(matrix){
+    // this function returns whether a matrix qualifies as a crossword grid.
+
+    // plan
+    // for each node in the grid, if the node is a white space,
+    //      if node is a white space, 
+                // test all the rules to determine if it passes
+                // all the rules each time so you dont have to loop more then once
+                // return false if any rule is not passed
+    // return true
 
 }
 
