@@ -10,3 +10,7 @@
 //   (for example, the colors of the top left and bottom right squares must match).
 
 // Write a program to determine whether a given matrix qualifies as a crossword grid.
+
+function crosswordCheck(matrix){
+    
+}
