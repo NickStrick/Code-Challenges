@@ -19,5 +19,13 @@
 // since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
 
 function stepsToExit(matrix){
-    
+
 }
+let matrix = [
+    [f, f, f, f],
+    [t, t, f, t],
+    [f, f, f, f],
+    [f, f, f, f]
+]
+
+console.log(stepsToExit(matrix))
