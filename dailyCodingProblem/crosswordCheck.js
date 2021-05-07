@@ -33,9 +33,9 @@ let matrix = [
 
 let matrix2 = [
     [0,1,1,0],
-    [1,1,1,0],
     [1,1,1,1],
-    [0,1,1,1]
+    [1,1,1,1],
+    [0,0,1,1]
 ]
 console.log(crosswordCheck(matrix)) // true
 console.log(crosswordCheck(matrix2)) // false
