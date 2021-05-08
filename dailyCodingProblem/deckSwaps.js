@@ -8,8 +8,10 @@
 
 // Hint: Make sure each one of the 52! permutations of the deck is equally likely.
 
-function deckSwaps(){
+function deckSwaps(input){
 
 }
 
 console.log(deckSwaps(5))
+console.log(deckSwaps(10))
+console.log(deckSwaps(52))
