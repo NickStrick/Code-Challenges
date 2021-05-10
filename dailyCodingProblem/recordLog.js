@@ -5,11 +5,27 @@
 
 //      - record(order_id): adds the order_id to the log
 //      - get_last(i): gets the ith last element from the log. 
-// i is guaranteed to be smaller than or equal to N.
+//          i is guaranteed to be smaller than or equal to N.
+
 // You should be as efficient with time and space as possible.
+
+class Logs{
+    constructor(recordList){
+        this.records = [...recordList]
+    }
+    
+    record = (order_id) => {
+        this.records.push(order_id)
+    }
+    get_last = (i) => {
+        return this.records[i]
+    }
+}
 
 function recordLogs(num){
 
 }
+
+
 
 console.timeLog(recordLogs(10))
