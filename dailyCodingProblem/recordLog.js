@@ -22,10 +22,10 @@ class Logs{
     }
 }
 
-function recordLogs(num){
+function recordLogs(log, n){
 
 }
 
 
 
-console.timeLog(recordLogs(10))
+console.timeLog(recordLogs(new Logs([1,2,3,4,5]), 10))
