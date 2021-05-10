@@ -24,6 +24,10 @@ class Logs{
 
 function recordLogs(log, n){
 
+    //plan
+    //  make a dictionary of the recorded logs
+    //  make sure their sorted and record them with get_last
+
 }
 
 
