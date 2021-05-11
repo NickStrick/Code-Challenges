@@ -4,5 +4,7 @@
 // rotate the array to the right k elements in-place.
 
 function arrayRotate(arr){
-    
+
 }
+
+console.log(arrayRotate([1,2,3,4,5,6,7,8], 4))
