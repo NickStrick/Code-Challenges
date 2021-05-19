@@ -9,6 +9,13 @@
 
 function canFinish(arr){
 
+
+    //plan
+
+    // go through array, at each interation
+        // go the furthest you can, if not go one less
+        // do this recursively, which lets each iteration determine if it can finish
+
 }
 
 console.log(canFinish([1,3,1,2,0,1]))//true
