@@ -7,6 +7,9 @@
 // then it should return [2, 3, 4], since 2 + 3 + 4 = 9.
 
 function kSum(ints, k){
+    //plan
+    //recursively test the different intergers and their sums
+    // determine which is the easiest solution of the group
 
 }
 
