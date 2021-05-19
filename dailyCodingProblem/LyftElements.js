@@ -7,5 +7,7 @@
 // then it should return [2, 3, 4], since 2 + 3 + 4 = 9.
 
 function kSum(ints, k){
-    
+
 }
+
+console.log(kSum([1,2,3,4,5], 9)) // [2,3,4]
