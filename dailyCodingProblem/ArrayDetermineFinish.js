@@ -6,3 +6,7 @@
 // For example, given the array [1, 3, 1, 2, 0, 1], we can go from indices 0 -> 1 -> 3 -> 5, so return true.
 
 // Given the array [1, 2, 1, 0, 0], we can't reach the end, so return false.
+
+function determineFinish(arr){
+    
+}
