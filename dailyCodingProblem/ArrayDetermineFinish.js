@@ -7,6 +7,9 @@
 
 // Given the array [1, 2, 1, 0, 0], we can't reach the end, so return false.
 
-function determineFinish(arr){
-    
+function canFinish(arr){
+
 }
+
+console.log(canFinish([1,3,1,2,0,1]))//true
+console.log(canFinish([1,2,1,0,0])) //false
