@@ -5,7 +5,10 @@
 // For example, given [20, 303, 3, 4, 25] and k = 49, return true as 20 + 4 + 25 = 49.
 
 function ArrayAddition(arr, k){
-    
+        //plan
+        // test up the array and thenevery index after 
+        // use addition to determine
+        // return true if any solution comes up
 }
 
 console.log(ArrayAddition([20,303,3,4,25], 49)); // true
