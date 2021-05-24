@@ -7,3 +7,5 @@
 function ArrayAddition(arr, k){
     
 }
+
+console.log(ArrayAddition([20,303,3,4,25], 49)); // true
