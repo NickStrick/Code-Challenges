@@ -19,5 +19,9 @@
 //  Given this representation, determine the depth of the tree.
 
 function determineTreeDepth(tree){
-    
+
 }
+
+console.log(determineTreeDepth('((((00)0)0)0)'))
+console.log(determineTreeDepth('(00)'))
+console.log(determineTreeDepth('((00)(00))'))
