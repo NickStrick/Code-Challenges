@@ -19,7 +19,10 @@
 //  Given this representation, determine the depth of the tree.
 
 function determineTreeDepth(tree){
-
+    //plan
+        // move through the array and detewrmine tree children
+        // posibly use a stack/queue
+        // return if tree is balanced"
 }
 
 console.log(determineTreeDepth('((((00)0)0)0)'))
