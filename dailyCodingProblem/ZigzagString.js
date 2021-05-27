@@ -13,5 +13,7 @@
 //    s     g
 
 function zigzagString(str, k){
-    
+
 }
+
+console.log(zigzagString("thisisazigzag", 4))
