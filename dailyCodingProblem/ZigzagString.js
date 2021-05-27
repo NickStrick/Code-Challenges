@@ -11,3 +11,7 @@
 //  h   s z   a
 //   i i   i z
 //    s     g
+
+function zigzagString(str, k){
+    
+}
