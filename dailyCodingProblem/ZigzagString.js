@@ -13,6 +13,8 @@
 //    s     g
 
 function zigzagString(str, k){
+    //plan
+    // move down the string and save a stack or queue as you move down the zig
 
 }
 
