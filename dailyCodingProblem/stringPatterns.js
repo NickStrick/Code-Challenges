@@ -6,6 +6,8 @@
 //  you should return [0, 7].
 
 function stringPattern(st, pat){
+    //plan
+    // loop throug array and look for patttern
 
 }
 
