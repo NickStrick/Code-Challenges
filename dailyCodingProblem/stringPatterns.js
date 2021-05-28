@@ -6,5 +6,7 @@
 //  you should return [0, 7].
 
 function stringPattern(st, pat){
-    
+
 }
+
+console.log(stringPattern("abracadabra", "abr"))
