@@ -31,7 +31,9 @@
 // 12
 
 function matrixSpiral(matrix){
-
+    //plan
+    // use math to get each index after first
+    // make the number that you turn at reduce after each revolution
 }
 
 let matrix1 = [
