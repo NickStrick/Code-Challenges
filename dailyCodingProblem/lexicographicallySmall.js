@@ -11,7 +11,9 @@
 // The best we can create in this case is ailyd.
 
 function lexicographicallySmall(str, k){
-
+//plan
+    // make a while loop that works for however long k is
+    // spit out a result
 }
 
 console.log(lexicographicallySmall('daily', 1)) // ailyd
