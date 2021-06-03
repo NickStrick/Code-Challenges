@@ -10,6 +10,8 @@
 // For example, suppose we are given the string daily and k = 1. 
 // The best we can create in this case is ailyd.
 
-function lexicographicallySmall(n, k){
-    
+function lexicographicallySmall(str, k){
+
 }
+
+console.log(lexicographicallySmall('daily', 1)) // ailyd
