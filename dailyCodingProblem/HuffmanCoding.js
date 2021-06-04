@@ -23,6 +23,8 @@
 // and use it to determine a mapping between characters and their encoded binary strings.
 
 function huffCode(biCode){
+    //plan
+    // determine the binary code tree representatoin using math and loops
 
 }
 
