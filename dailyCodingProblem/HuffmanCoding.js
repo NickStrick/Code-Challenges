@@ -25,3 +25,5 @@
 function huffCode(biCode){
 
 }
+
+console.log(huffCode('0000110111'))
