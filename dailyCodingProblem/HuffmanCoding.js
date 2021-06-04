@@ -21,3 +21,7 @@
 
 // Given a dictionary of character frequencies, build a Huffman tree, 
 // and use it to determine a mapping between characters and their encoded binary strings.
+
+function huffCode(biCode){
+
+}
