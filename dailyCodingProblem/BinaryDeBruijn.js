@@ -13,3 +13,5 @@
 function deBrujin(C, k){
 
 }
+
+console.log([0,1], 3)
