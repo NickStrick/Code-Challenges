@@ -11,6 +11,9 @@
 
 // Create an algorithm that finds a De Bruijn sequence.
 function deBrujin(C, k){
+    //plan
+    // have a look that creates a queue,stack,dictinary
+    // that can be used to create the solution
 
 }
 
