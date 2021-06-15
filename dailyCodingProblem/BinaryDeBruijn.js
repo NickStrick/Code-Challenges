@@ -10,6 +10,6 @@
 // and one possible solution would be 00010111.
 
 // Create an algorithm that finds a De Bruijn sequence.
-function deBrujin(){
+function deBrujin(C, k){
 
 }
