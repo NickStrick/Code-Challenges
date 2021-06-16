@@ -16,5 +16,11 @@
 // You should return [1, 3, 2, 4, 5, 6, 7].
 
 function boustrophedon(biTree){
-    
+
 }
+
+let tree = {
+    0:{val:1, l:null, r:null},
+}
+
+console.log(boustrophedon(tree))
