@@ -14,3 +14,7 @@
 //  / \       / \
 // 4   5     6   7
 // You should return [1, 3, 2, 4, 5, 6, 7].
+
+function boustrophedon(biTree){
+    
+}
