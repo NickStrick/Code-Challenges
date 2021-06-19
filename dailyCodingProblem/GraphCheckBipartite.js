@@ -6,6 +6,8 @@
 // vertices of the same set.
 
 function checkBipartite(graph){
+    //plan
+    // take a graph and run bipartite verticies
 
 }
 
