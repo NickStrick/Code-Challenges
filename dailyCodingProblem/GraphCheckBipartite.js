@@ -8,3 +8,7 @@
 function checkBipartite(graph){
 
 }
+
+let myGraph = {};
+
+console.log(checkBipartite(myGraph))
