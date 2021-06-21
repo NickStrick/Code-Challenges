@@ -9,6 +9,8 @@
 // as the lowest node in T that has both v and w as descendants 
 // (where we allow a node to be a descendant of itself).”
 function LCA(tree){
+    // plan
+    // create a algorithm that find the loest common demoninator in a tree
 
 }
 
