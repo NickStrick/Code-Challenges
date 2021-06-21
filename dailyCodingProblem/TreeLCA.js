@@ -11,3 +11,5 @@
 function LCA(tree){
 
 }
+
+console.log(LCA({}))
