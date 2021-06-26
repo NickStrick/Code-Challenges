@@ -7,3 +7,6 @@
 // so that you can end up with some amount greater than A of that currency.
 
 // There are no transaction costs and you can trade fractional quantities.
+function currencyExhange(arr, a){
+    
+}
