@@ -8,5 +8,6 @@
 
 // There are no transaction costs and you can trade fractional quantities.
 function currencyExhange(arr, a){
-    
+
 }
+console.log(currencyExhange([], 1))
